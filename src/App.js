@@ -1,22 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import Card from './components/Card';
+
 
 function App() {
+  let advice = "Some of life's best lessons are learnt at the worst times."
+  let id = 164;
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          EDITING ASDFASDF<code>src/App.js</code> and save to reload.
+          Advice #{id}
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>
+          {advice}
+        </p>
+        <Card/>
       </header>
     </div>
   );
