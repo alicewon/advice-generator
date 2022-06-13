@@ -26,7 +26,7 @@
 }
 
 .Card > * {
-  padding:20px;
+  padding: 10px 20px;
 }
 
 .Advice-id {
@@ -39,11 +39,14 @@
 .Advice-text {
   color: #CEE3E9;
   font-size: 26px;
+  align-items: center;
+  flex-basis: 28%;
 }
 
 .Divider {
   color: #CEE3E9;
   color: #4F5D74;
+  padding-bottom: 50px;
 }
 
 .Dice-Icon {
@@ -54,5 +57,21 @@
   background-color: #53FFAA;
   border-radius: 50%;
   border: none;
+  padding:20px;
+  position: absolute;
+  top: 70%;
+  transition-duration: .3s;
+	transition-property: box-shadow;
+}
+
+.Dice-button:hover {
+  box-shadow: 0 0 5px 5px #53FFAA;
+}
+
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
 }
 
