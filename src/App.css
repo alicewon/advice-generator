@@ -68,6 +68,12 @@
   box-shadow: 0 0 5px 5px #53FFAA;
 }
 
+.Dice-button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 
 @keyframes glowing {
   0% { background-position: 0 0; }

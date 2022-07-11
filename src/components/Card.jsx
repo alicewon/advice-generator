@@ -16,6 +16,7 @@ function Card() {
   });
   
   const [advice, setAdvice] = useState({});
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
 
   const adviceSet = (data) => {
     setAdvice(prevState => ({
@@ -26,9 +27,18 @@ function Card() {
   )};
 
   const fetchAdvice = () => {
+    setIsButtonDisabled(true);
+    
+    setTimeout(function() {
+      setIsButtonDisabled(false);
+    }, 2000)
+
     fetch('https://api.adviceslip.com/advice')
     .then(response => response.json())
     .then(data => adviceSet({adviceId: data.slip.id, adviceText: data.slip.advice}));
+
+    clearTimeout()
+    
   };
 
   return (
@@ -48,7 +58,7 @@ function Card() {
       <section className="Divider">
         { width < breakpoint ? <MobileDivider/> : <DesktopDivider/>}
       </section>
-      <button className="Dice-button" aria-label="Dice Button" onClick={()=> fetchAdvice()}>
+      <button className="Dice-button" aria-label="Dice Button" disabled={isButtonDisabled} onClick={()=> fetchAdvice()}>
         <Dice/>
       </button>
         
