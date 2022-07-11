@@ -17,7 +17,7 @@
 .Card {
   background-color: #313A48;
   border-radius: 15px;
-  height: 364px;
+  height: 340px;
   width: 540px;
   align-items: center;
   justify-content: center;
@@ -59,7 +59,7 @@
   border: none;
   padding:20px;
   position: absolute;
-  top: 70%;
+  top: 67%;
   transition-duration: .3s;
 	transition-property: box-shadow;
 }

@@ -6,10 +6,10 @@ import Card from './components/Card';
 function App() {
  
   return (
-    <div className="App">
-      <div className="Card-container">
+    <div className="App" role="main">
+      <section className="Card-container">
         <Card/>
-      </div>
+      </section>
     </div>
   );
 }

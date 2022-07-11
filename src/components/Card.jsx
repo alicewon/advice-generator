@@ -32,7 +32,7 @@ function Card() {
   };
 
   return (
-    <div className="Card">
+    <section className="Card">
       <h4 className="Advice-id">{
             advice.adviceId != undefined
             ? `Advice # ${advice.adviceId}`
@@ -45,14 +45,14 @@ function Card() {
             : "Welcome to the Advice Generator. Click the Dice below to start."
           }
           </h1>
-      <div className="Divider">
+      <section className="Divider">
         { width < breakpoint ? <MobileDivider/> : <DesktopDivider/>}
-      </div>
-      <button className="Dice-button" onClick={()=> fetchAdvice()}>
+      </section>
+      <button className="Dice-button" aria-label="Dice Button" onClick={()=> fetchAdvice()}>
         <Dice/>
       </button>
         
-    </div>
+    </section>
   )
 };
 
