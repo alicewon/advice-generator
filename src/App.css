@@ -63,6 +63,8 @@
   top: 64%;
   transition-duration: .3s;
 	transition-property: box-shadow;
+  height: 64px;
+  width: 64px;
 }
 
 .Dice-button:hover {
