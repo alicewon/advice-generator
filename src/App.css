@@ -17,7 +17,7 @@
 .Card {
   background-color: #313A48;
   border-radius: 15px;
-  height: 340px;
+  height: 320px;
   width: 540px;
   align-items: center;
   justify-content: center;
@@ -41,12 +41,13 @@
   font-size: 26px;
   align-items: center;
   flex-basis: 28%;
+  margin: 0px 10px;
 }
 
 .Divider {
   color: #CEE3E9;
   color: #4F5D74;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 .Dice-Icon {
@@ -59,7 +60,7 @@
   border: none;
   padding:20px;
   position: absolute;
-  top: 67%;
+  top: 62%;
   transition-duration: .3s;
 	transition-property: box-shadow;
 }
